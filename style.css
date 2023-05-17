@@ -50,7 +50,7 @@ li{
 }
 
 .container {
-    outline: solid 3px red;
+    
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
@@ -62,12 +62,19 @@ li{
 
 .container.header {
     display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 
-.container.header nav {
-    outline: solid 2px red;
+.header nav {
+    
     display: flex;
-}
+    justify-content: center;
+    align-items: center;
+}  
 
 
 .logo{
@@ -84,10 +91,26 @@ li{
     margin-left: 93px;
 }
 
-.contacts-list {
-    outline: solid 2px red;
-    display: flex;
+.nav-item:not(:first-child),
+.contacts-item:not(:first-child) {
+    margin-left: 50px;
+}
+/* .nav-item:nth-child(n+2) {
+    margin-left: 50px;
+}
+.nav-item + .nav-item {
+    margin-left: 50px;
+} */
 
+.contacts-item:not(:first-child) {
+    margin-left: 50px;
+}
+
+.contacts-list {
+    
+    display: flex;
+padding-top: 24px;
+padding-bottom: 24px;
     margin-left: auto;
 }
 
@@ -103,6 +126,13 @@ li{
 
     color: var(--primary-text-color);
 }
+
+.nav-link{
+    color: var(--primary-text-color);
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
 .contacts-link {
 
     color: var(--secondary-text-color);
@@ -141,7 +171,7 @@ color: var(--background-color);
     background-color: var(--acent-color);
 }
 
-.advantages {
+.title {
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
@@ -150,7 +180,7 @@ color: var(--background-color);
     color: var(--primary-text-color);
 }
 
-.p {
+.text {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
@@ -160,6 +190,10 @@ color: var(--background-color);
 
 .what-we-do {
     display: flex;
+}
+
+.what-we-do img {
+    width: 270px;
 }
 
 h2 {
