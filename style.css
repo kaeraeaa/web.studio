@@ -146,10 +146,23 @@ padding-bottom: 24px;
 }
 /*  */
 .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-color: var(--hero-background);
 }
 
+.hero .container {
+    
+    align-items: center;
+    
+   
+}
+
 h1{ 
+    width: 696px;
+    margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
 font-weight: 900;
 font-size: 44px;
 line-height: 60px;
@@ -160,15 +173,33 @@ text-transform: uppercase;
 color: var(--background-color);
 }
 .hero-button {
-    
+     display: flex;
+    justify-content: center;
+    align-items: center; 
+
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    padding: 10px 32px;
+
     font-weight: 700;
     font-size: 16px;
     line-height: 30px;
-    text-align: center;
     letter-spacing: 0.06em;
+    text-align: center;
 
     color: var(--background-color);
     background-color: var(--acent-color);
+}
+
+.advantages {
+    display: flex;
+    justify-content: space-between;
+}
+
+.advantages .item {
+    width: 270px;
 }
 
 .title {
@@ -188,13 +219,27 @@ color: var(--background-color);
     color: var(--secondary-text-color);
 }
 
-.what-we-do {
-    display: flex;
+.advantages .title {
+    font-weight: 700px;
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
 }
 
-.what-we-do img {
-    width: 270px;
+.what-we-do {
+    display: flex;
+    justify-content: space-between;
 }
+
+/* .what-we-do img {
+    width: 270px;
+} */
+
+.img-what-we-do {
+    width: 370px;
+}
+    
+
 
 h2 {
     font-weight: 700;
