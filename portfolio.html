@@ -6,86 +6,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <!-- Шапка -->
+    <!-- Шапка сторінки -->
     <header>
-        <a href="./"><span>Web</span>Studio</a>
+        <div class="container header">
         <nav>
-            <ul>
-                <li >
-                    <a href="./">Студія</a>
-                </li>
-                <li >
-                    <a href="./portfolio.html">Портфоліо</a>
-                </li>
-                <li >
-                    <a href="">Контакти</a>
-                </li>
+            <!-- Логотип -->
+            <a class="logo" href="./">Web<span>Studio</span></a>
+            <!-- Навігація -->
+            <ul class="nav-list">
+                <li class="nav-item">
+                 <a class="nav-link" href="">Студія</a>
+             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="">Контакти</a>
+            </li>
             </ul>
         </nav>
-        <ul >
-            <li >
-                <a href="mail:info@devstudio.com">info@devstudio.com</a>
+        <!-- Контакти -->
+            <ul class="contacts-list">
+            <li class="contacts-item">
+                <a class="contacts-link" href="">info@devstudio.com</a>
             </li>
-            <li >
-                <a href="tel:+380961111111">+38 096 111 11 11</a>
+            <li class="contacts-item">
+                <a class="contacts-link" href="">+38 096 111 11 11</a>
             </li>
-        </ul>
+            </ul>
+        
+    </div>
     </header>
     <main>
-        <div>
-            <ul >
-                <li><button type="button" href="">Усе</button></li>
-                <li><button type="button" href="">Веб-сайти</button></li>
-                <li><button type="button" href="">Застосунки</button></li>
-                <li><button type="button" href="">Дизайн</button></li>
-                <li><button type="button" href="">Маркетинг</button></li>
+        <section class="section-buttons section">
+        <div class="container">
+            <ul class="buttons-list">
+                <li class="list-item"><button class="button" type="button" href="">Усе</button></li>
+                <li class="list-item"><button class="button" type="button" href="">Веб-сайти</button></li>
+                <li class="list-item"><button class="button" type="button" href="">Застосунки</button></li>
+                <li class="list-item"><button class="button" type="button" href="">Дизайн</button></li>
+                <li class="list-item"><button class="button" type="button" href="">Маркетинг</button></li>
             </ul>
             </div>
+            </section>
         <section>
-            <img src="./images/img (7).jpg">
-            <h3 class="job-title">Технокряк</h3>
-            <p>Веб-сайт</p>
-
+            <div class="main-container">
+            <ul class="main-content">
+        <li class="main-items">
+         <img src="./images/img (7).jpg">
+         <h3 class="job-title">Технокряк</h3>
+         <p class="main-text">Веб-сайт</p>
+        </li>
+        <li class="main-items">
             <img src="./images/img (8).jpg">
             <h3 class="job-title" >Постер New Orlean vs Golden Star</h3>
-            <p>Дизайн</p>
-
+            <p class="main-text">Дизайн</p>
+        </li>
+        <li class="main-items">
             <img src="./images/img (9).jpg">  
             <h3 class="job-title">Ресторан Seafood</h3>
-            <p>Додаток</p>
-
-
+            <p class="main-text">Додаток</p>
+        </li>
+        <li class="main-items">
             <img src="./images/img (10).jpg">
             <h3 class="job-title">Проєкт Prime</h3>
-            <p>Маркетинг</p>
+            <p class="main-text">Маркетинг</p>
+        </li>
+        <li class="main-items">
             <img src="./images/img (12).jpg">
             <h3 class="job-title">Проєкт Boxes</h3>
-            <p>Додаток</p>
+            <p class="main-text">Додаток</p>
+        </li>
+        <li class="main-items">
             <img src="./images/img (13).jpg">
             <h3 class="job-title">Inspiration has no Borders</h3>
-            <p>Веб-сайт</p>
-
-
+            <p class="main-text">Веб-сайт</p>
+        </li>
+        <li class="main-items">
             <img src="./images/img (14).jpg">
             <h3 class="job-title">Видання Limited Edition</h3>
-            <p>Дизайн</p>
+            <p class="main-text">Дизайн</p>
+        </li>
+        <li class="main-items">
             <img src="./images/img (15).jpg">
             <h3 class="job-title">Проєкт LAB</h3>
-            <p>Маркетинг</p>
+            <p class="main-text">Маркетинг</p>
+        </li>
+        <li class="main-items">
             <img src="./images/img (16).jpg">
             <h3 class="job-title">Growing Business</h3>
-            <p>Додаток</p>
+            <p class="main-text">Додаток</p>
+        </li>
+        </ul>
+    </div>
         </section>
     </main>
-    <footer>
-        <section>
-        <h2>WebStudio</h2>
-        <h3>м. Київ, пр-т Лесі Українки, 26</h3>
-        <h3>info@devstudio.com</h3>
-        <h3>+38 096 111 11 11</h3>
-    </section>
-    </footer>
+     <!-- Футер -->
+  <footer class="section footer">
+    <div class="container">
+      <a class="logo" href="./">Web<span>Studio</span></a>
+    <address>м. Київ, пр-т Лесі Українки, 26</address>
+    <ul class="contacts-list">
+      <li class="contacts-item">
+        <a class="contacts-link" href="">info@devstudio.com</a>
+      </li>
+      <li class="contacts-item">
+        <a class="contacts-link" href="">+38 096 111 11 11</a>
+      </li>
+     </ul>
+    </div>
+</footer>
 </body>
 </html>
