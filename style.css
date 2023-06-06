@@ -328,6 +328,14 @@ address {
     color: var(--background-color);
 }
 
+.footer .contacts-list {
+    display: block;
+}
+
+.footer .contacts-item:not(:first-child){
+    margin-left: 0;
+}
+
 .footer .contacts-link {  
     font-weight: 400;
     font-size: 14px;
@@ -388,12 +396,13 @@ color: var(--primary-text-color);
 .main-content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    margin: -15px;
     
 }
 .main-items {
     border: 1px solid #EEEEEE;
     margin: 15px;
+    width: calc((100% - 6 * 15px) / 3);
 }
 
 .main-text {
