@@ -32,6 +32,7 @@ a{
 img{
     display: block;
     width: 100%;
+    height: auto;
 }
 
 ul,
@@ -503,4 +504,40 @@ color: var(--primary-text-color);
 
 .wwd-item {
     position: relative;
+}
+
+/* модальне вікно */
+.backdrop {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.20);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    width: 528px;
+    height: 581px;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.close {
+    width: 30px;
+    height: 30px;
+    /* flex-shrink: 0; */
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border-color: rgba(0, 0, 0, 0.10);
 }
