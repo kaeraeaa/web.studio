@@ -557,8 +557,15 @@ color: var(--primary-text-color);
 .form-field {
     display: flex;
     flex-direction: column;
+    position: relative;
 
     color: #757575;
+}
+
+.form-field svg {
+    position: absolute;
+    left: 12px;
+    top: 30px;
 }
 
 .form-button {
@@ -614,6 +621,7 @@ height: 120px;
 border-radius: 4px;
 border: 1px solid rgba(33, 33, 33, 0.20);
 color: rgba(117, 117, 117, 0.50);
+margin-top: 4px;
 
 }
 
@@ -621,4 +629,15 @@ color: rgba(117, 117, 117, 0.50);
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.20);
     height: 40px;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    margin-top: 4px;
+}
+
+.form-field:focus-within svg {
+    fill: var(--acent-color);
+}
+
+.form-field:focus-within input {
+    border: 1px solid var(--acent-color);
 }
