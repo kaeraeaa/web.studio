@@ -1,0 +1,97 @@
+.advantages {
+
+    @media screen and (min-width: $tablet){
+        display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+    }
+
+    @media screen and (min-width: $desktop){
+        
+    justify-content: space-between;
+    }
+
+    & .item {
+        @media screen and (min-width: $mobile){
+            width: 450px;
+
+            &:not(:last-child){
+                margin-bottom: 30px;
+            }
+        }
+
+        @media screen and (min-width: $tablet) {
+            margin: 15px;
+            width: calc((100% - 30px * 2) / 2);
+        }
+
+        @media screen and (min-width: $desktop){
+            width: 270px;
+        }
+
+
+    }
+    
+    & .item::before {
+        content: '';
+        display: block;
+        height: 120px;
+    
+        background-color: #F5F4FA;
+        border-radius: 4px;
+        
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: 30px;
+    }
+    & .title {
+        font-weight: 700px;
+        text-transform: uppercase;
+    
+        margin-bottom: 10px;
+
+        @media screen and (max-width: $tablet) {
+            text-align: center;
+        }
+    }
+}
+
+
+
+.icon-aerial::before{
+    background-image: url(../images/Vector\ \(1\).svg);
+}
+
+.icon-clock::before {
+    background-image: url(../images/Vector\ \(2\).svg);
+}
+
+.icon-diagram::before {
+    background-image: url(../images/Vector\ \(3\).svg);
+}
+
+.icon-astronaut::before {
+    background-image: url(../images/Vector\ \(4\).svg);
+}
+
+.title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+
+    color: var(--primary-text-color);
+
+    @media screen and (min-width: $mobile) {
+        text-align: center;
+    }
+}
+
+.text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+
+    color: var(--secondary-text-color);
+}
+

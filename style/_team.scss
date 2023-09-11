@@ -1,3 +1,7 @@
+.section.our-team {
+    background: #f5f4f4;
+}
+
 .team-list {
     display: flex;
     justify-content: space-between;
@@ -28,5 +32,23 @@ border-radius: 0px 0px 4px 4px;
 
     margin-bottom: 30px;
 
+    color: var(--secondary-text-color);
+}
+
+
+.comand > h2 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;  
+    text-align: center;
+    
+    color: var(--primary-text-color);
+}
+
+.comand > p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    
     color: var(--secondary-text-color);
 }

@@ -1,0 +1,33 @@
+h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--primary-text-color);
+}
+.regular-costomers {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link-regular {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border-radius: 4px;
+    border: 1px solid #AFB1B8;
+    color: #757575;
+}
+
+.regular-icon {
+    fill: #AFB1B8;
+}
+
+.link-regular:hover,
+.link-regular:focus {
+    border: 1px solid var(--acent-color);
+}

@@ -1,36 +1,39 @@
 .what-we-do {
     display: flex;
     justify-content: space-between;
+
+    & .text {
+    
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
+        
+        
+    }
+    
+    & div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    
+        height: 70px;
+        background:rgba(47, 48, 58, 0.80);
+    }
 }
 
 .img-what-we-do {
     width: 370px;
 }
-.what-we-do .text {
-    
-    color: #ffffff;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.42px;
-    text-transform: uppercase;
-    /* padding: 27px 113px; */
-    
-}
+ 
 
-.what-we-do div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-
-    height: 70px;
-    background:rgba(47, 48, 58, 0.80);
-}
 
 .wwd-item {
     position: relative;
