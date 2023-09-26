@@ -16,41 +16,53 @@
     <!-- Шапка сторінки -->
     <header>
         <div class="container header">
-        <nav>
-            <!-- Логотип -->
             <a class="logo" href="./">Web<span>Studio</span></a>
-            <!-- Навігація -->
-            <ul class="nav-list">
+            <button class="button-header is-open" type="button" data-menu-button>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 14.6667V12H32V14.6667H8ZM8 21.3333H32V18.6667H8V21.3333ZM8 28H32V25.3333H8V28Z"/>
+                    </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none" class="close-icon">
+                    <path d="M29.6667 12.88L27.7867 11L20.3333 18.4533L12.88 11L11 12.88L18.4533 20.3333L11 27.7867L12.88 29.6667L20.3333 22.2133L27.7867 29.6667L29.6667 27.7867L22.2133 20.3333L29.6667 12.88Z" fill="#212121"/>
+                </svg>
+            </button>
+            <div class="mobile-menu" data-menu><nav>
+            
+            
+            
+                <ul class="nav-list">
+                    <li class="nav-item">
+                     <a class="nav-link" href="">Студія</a>
+                 </li>
                 <li class="nav-item">
-                 <a class="nav-link" href="">Студія</a>
-             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./portfolio.html">Портфоліо</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="">Контакти</a>
-            </li>
-            </ul>
-        </nav>
-        <!-- Контакти -->
-            <ul class="contacts-list">
-            <li class="contacts-item">
-                <a class="contacts-link" href="">
-                    <svg width="16" height="12">
-                        <use href="./symbol-defs.svg#icon-email"></use>
-                    </svg>
-                    info@devstudio.com</a>
-            </li>
-            <li class="contacts-item">
-                <a class="contacts-link" href="">
-                    <svg  width="10" height="16">
-                        <use href="./symbol-defs.svg#icon-tel"></use>
-                    </svg>
-                    +38 096 111 11 11</a>
-            </li>
-            </ul>
-        
+                    <a class="nav-link" href="./portfolio.html">Портфоліо</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Контакти</a>
+                </li>
+                </ul>
+            </nav>
+           
+                <ul class="contacts-list">
+                <li class="contacts-item">
+                    <a class="contacts-link" href="">
+                        <svg width="16" height="12">
+                            <use href="./symbol-defs.svg#icon-email"></use>
+                        </svg>
+                        info@devstudio.com</a>
+                </li>
+                <li class="contacts-item">
+                    <a class="contacts-link" href="">
+                        <svg  width="10" height="16">
+                            <use href="./symbol-defs.svg#icon-tel"></use>
+                        </svg>
+                        +38 096 111 11 11</a>
+                </li>
+                </ul>
+            
+        </div>
     </div>
+        
     </header>
     <!-- Головний контент -->
     <main>
@@ -158,7 +170,12 @@
           <ul class="team-list">
 
             <li class="item">
-            <img class="img" src="./images/img (3).jpg" width="270">
+            <img class="img" srcset=
+            "./images/demianenko@1.jpg 1x, 
+            ./images/demianenko@2.jpg 2x,
+            ./images/demianenko@3x.jpg" 
+            src="./images/demianenko@1x.jpg" width="270"
+            sizes="(min-width: $tablet) 354px (min-width: $desktop) 270px (max-width: 767px) 450px">
             <h3 class="name">Ігор Дем'яненко</h3>
             <p class="role">Product Designer</p>
             </li>
@@ -256,25 +273,8 @@
      </ul>
     </div>
 </footer>
-<!-- <script>
-    const refs = {
-      openModalBtn: document.querySelector("[data-open-modal]"),
-      closeModalBtn: document.querySelector("[data-close-modal]"),
-      backdrop: document.querySelector("[data-backdrop]"),
-    };
 
-    refs.openModalBtn.addEventListener("click", toggleModal);
-    refs.closeModalBtn.addEventListener("click", toggleModal);
-
-    refs.backdrop.addEventListener("click", logBackdropClick);
-
-    function toggleModal() {
-      refs.backdrop.classList.toggle("is-hidden");
-    }
-
-    function logBackdropClick() {
-      console.log("Это клик в бекдроп");
-    }
-  </script> -->
+  <!-- <script href="./js/modal.js" type="module"></script> -->
+  <script href="./js/mobile-menu.js" type="module"></script>
 </body>
 </html>
