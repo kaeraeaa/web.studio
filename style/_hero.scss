@@ -1,13 +1,38 @@
 .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-    /* background-color: var(--hero-background); */
+   
     
     background: rgba(47, 48, 58, 0.4);
-    background-image: url(../images/Img\ \(17\).jpg);
+    
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 1),
+            (min-resolution: 96dpi),
+            (min-resolution: 1dppx) {
+    background-image: url(../images/header@1x.jpg) ;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+    background-image: url(../images/header@2x.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 3),
+            (min-resolution: 288dpi),
+            (min-resolution: 3dppx) {
+    background-image: url(../images/header@3x.jpg);
+    }
 
     & .container {
         text-align: center;
+
+
+        
     }
 
     &-button {
@@ -46,4 +71,3 @@ text-transform: uppercase;
 
 color: var(--background-color);
 }
-

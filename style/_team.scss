@@ -4,7 +4,6 @@
 
 .team-list {
     display: flex;
-    justify-content: space-between;
 }
 
 .team-list .img {
@@ -51,4 +50,27 @@ border-radius: 0px 0px 4px 4px;
     line-height: 19px;
     
     color: var(--secondary-text-color);
+}
+
+.network-icon {
+    fill: rgba(175, 177, 184, 1);
+    width: 20px;
+    height: 20px;
+}
+
+.network-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 32px 30px 32px;
+}
+
+.network-list a:hover,
+.network-list a:focus {
+    background-color: var(--accent-color--);
+    border-radius: 50%;
+}
+
+.network-list a:hover .network-icon,
+.network-list a:focus .network-icon {
+    fill: var(--background-color--);
 }
