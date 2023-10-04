@@ -421,6 +421,18 @@ h1 {
   position: relative;
 }
 
+@media screen and (max-width: 480px) {
+  .section.wwd {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section.wwd {
+    display: none;
+  }
+}
+
 .section.our-team {
   background: #f5f4f4;
 }
@@ -529,6 +541,13 @@ h2 {
             justify-content: space-between;
   }
 }
+@media screen and (min-width: 768px) {
+  .regular-costomers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 
 .regular {
   margin-bottom: 30px;
@@ -587,6 +606,13 @@ h2 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+}
+@media screen and (min-width: 768px) {
+  .regular-costomers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 

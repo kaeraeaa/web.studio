@@ -38,3 +38,15 @@
 .wwd-item {
     position: relative;
 }
+
+
+.section.wwd {
+    @media screen and (max-width: $mobile){
+        display: none;
+    }
+}
+.section.wwd {
+    @media screen and (max-width: $tablet){
+        display: none;
+    }
+}

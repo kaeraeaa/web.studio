@@ -16,6 +16,11 @@ h2 {
         display: flex;
         justify-content: space-between;
     }
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        
+    }
 }
 
 .regular {
