@@ -127,7 +127,7 @@ li {
   color: var(--logo-color);
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 768px) {
   .nav-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -296,11 +296,11 @@ h1 {
     margin: -15px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .advantages {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 @media screen and (min-width: 480px) {
@@ -421,13 +421,7 @@ h1 {
   position: relative;
 }
 
-@media screen and (max-width: 480px) {
-  .section.wwd {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .section.wwd {
     display: none;
   }
@@ -437,10 +431,22 @@ h1 {
   background: #f5f4f4;
 }
 
-.team-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .item {
+    margin: 15px;
+    width: calc((100% - 60px) / 2);
+  }
 }
 
 .team-list .img {
@@ -499,6 +505,7 @@ h1 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 16px 32px 30px 32px;
+  padding-bottom: 30px;
 }
 
 .network-list a:hover,

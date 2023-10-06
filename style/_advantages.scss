@@ -6,9 +6,9 @@
     margin: -15px;
     }
 
-    @media screen and (min-width: $desktop){
-        
-    justify-content: space-between;
+    @media screen and (min-width: 1200px){
+        display: flex;
+    
     }
 
     & .item {

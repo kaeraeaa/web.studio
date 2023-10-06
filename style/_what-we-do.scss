@@ -39,14 +39,18 @@
     position: relative;
 }
 
-
 .section.wwd {
-    @media screen and (max-width: $mobile){
+    @media screen and (max-width: 1200px) {
         display: none;
     }
 }
-.section.wwd {
-    @media screen and (max-width: $tablet){
-        display: none;
-    }
-}
+// .section.wwd {
+//     @media screen and (min-width: $mobile){
+//         display: none;
+//     }
+// }
+// .section.wwd {
+//     @media screen and (min-width: 768px){
+//         display: none;
+//     }
+// }
