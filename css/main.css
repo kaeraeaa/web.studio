@@ -108,7 +108,7 @@ li {
       -ms-flex-align: center;
           align-items: center;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .container.header {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -136,10 +136,6 @@ li {
   }
 }
 
-.nav-item:not(:first-child),
-.contacts-item:not(:first-child) {
-  margin-top: 32px;
-}
 @media screen and (min-width: 1600px) {
   .nav-item:not(:first-child),
   .contacts-item:not(:first-child) {
@@ -147,16 +143,7 @@ li {
   }
 }
 
-.contacts-item:not(:first-child) {
-  margin-left: 50px;
-}
-
 .contacts-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-top: 24px;
-  padding-bottom: 24px;
   margin-left: auto;
 }
 
@@ -230,6 +217,23 @@ li {
   display: block;
 }
 
+@media screen and (min-width: 767px) {
+  .mobile-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .nav-item {
+    margin-right: 50px;
+  }
+}
+
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
@@ -286,7 +290,7 @@ h1 {
   color: var(--background-color);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .advantages {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -296,11 +300,14 @@ h1 {
     margin: -15px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199px) {
   .advantages {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 @media screen and (min-width: 480px) {
@@ -528,15 +535,17 @@ h2 {
   color: var(--primary-text-color);
 }
 
-.regular-costomers {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+@media screen and (max-width: 767px) {
+  .regular-costomers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 @media screen and (min-width: 1600px) {
   .regular-costomers {
@@ -548,16 +557,29 @@ h2 {
             justify-content: space-between;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .regular-costomers {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
   }
 }
 
 .regular {
   margin-bottom: 30px;
+}
+@media screen and (min-width: 767px) {
+  .regular {
+    width: calc(33.33% - 10px);
+    height: calc(50% - 10px);
+  }
 }
 
 .link-regular {
@@ -595,15 +617,17 @@ h2 {
   color: var(--primary-text-color);
 }
 
-.regular-costomers {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+@media screen and (max-width: 767px) {
+  .regular-costomers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 @media screen and (min-width: 1600px) {
   .regular-costomers {
@@ -615,16 +639,29 @@ h2 {
             justify-content: space-between;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .regular-costomers {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
   }
 }
 
 .regular {
   margin-bottom: 30px;
+}
+@media screen and (min-width: 767px) {
+  .regular {
+    width: calc(33.33% - 10px);
+    height: calc(50% - 10px);
+  }
 }
 
 .link-regular {

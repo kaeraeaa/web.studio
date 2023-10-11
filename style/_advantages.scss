@@ -1,14 +1,14 @@
 .advantages {
 
-    @media screen and (min-width: $tablet){
+    @media screen and (min-width: 767px){
         display: flex;
     flex-wrap: wrap;
     margin: -15px;
     }
 
-    @media screen and (min-width: 1200px){
+    @media screen and (min-width: 1199px){
         display: flex;
-    
+        justify-content: space-between;
     }
 
     & .item {

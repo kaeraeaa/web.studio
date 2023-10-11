@@ -8,23 +8,34 @@ h2 {
     color: var(--primary-text-color);
 }
 .regular-costomers {
-    display: flex;
+
+    @media screen and (max-width: 767px) {
+        display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    }
+    
 
     @media screen and (min-width: $desktop){
         display: flex;
         justify-content: space-between;
     }
 
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: 767px) {
         display: flex;
-        
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-between;
     }
 }
 
 .regular {
     margin-bottom: 30px;
+    
+    @media screen and (min-width: 767px) {
+        width: calc(33.33% - 10px);
+        height: calc(50% - 10px);
+    }
 }
 
 .link-regular {
