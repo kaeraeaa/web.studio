@@ -1,16 +1,16 @@
 .advantages {
+ @media screen and (min-width: 1200px){
+        display: flex;
+        justify-content: space-between;
+    }
 
-    @media screen and (min-width: 767px){
+    @media screen and (min-width: 767px) and (max-width: 1199px){
         display: flex;
     flex-wrap: wrap;
     margin: -15px;
     }
 
-    @media screen and (min-width: 1200px){
-        display: flex;
-        justify-content: space-between;
-    }
-
+   
     & .item {
         @media screen and (min-width: $mobile){
             width: 450px;
@@ -20,12 +20,12 @@
             }
         }
 
-        @media screen and (min-width: $tablet) {
+        @media screen and (min-width: 767px) {
             margin: 15px;
             width: calc((100% - 30px * 2) / 2);
         }
 
-        @media screen and (min-width: $desktop){
+        @media screen and (min-width: 1200px){
             width: 270px;
         }
 

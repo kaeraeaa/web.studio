@@ -36,9 +36,14 @@
 
 
 .nav-list {
-   @media screen and (min-width: 768px){
+   @media screen and (min-width: 768px) and (max-width: 1199px){
     display: flex;
     margin-left: 93px;
+   }
+
+   @media screen and (min-width: 1200px) {
+    display: flex;
+    
    }
 }
 
@@ -58,16 +63,23 @@
 
 
 .contacts-list {
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        
+    }
     
-    // display: flex;
-// padding-top: 24px;
-// padding-bottom: 24px;
-    margin-left: auto;
+    // margin-left: auto;
 }
 
 // .logo > span{
 //     color: var(--logo-color);
 // }
+.contacts-item {
+    @media screen and (min-width: 1200px) {
+        margin-right: auto;
+        
+    }
+}
 .nav-link, 
 .contacts-link {
     font-weight: 500;
